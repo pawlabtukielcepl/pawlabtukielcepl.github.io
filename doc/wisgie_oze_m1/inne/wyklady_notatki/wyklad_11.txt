@@ -1,0 +1,14 @@
+21/12/2022:
+Niestety projektor nie dzialal i wyklad prowadzilem przy pomocy tablicy i kredy. Przerobilem podczas
+wykladu nastepujace zagadnienia:
+1) Wyznacznik macierzy kwadratowej (przypomnialem definicje i metode obliczania wyznacznikow 2x2 i 3x3)
+2) Podalem twierdzenie o rozwinieciu wyznacznika wzgledem i-tego wiersza i j-tej kolumny
+3) Obliczylem 3 przyklady z wykorzystaniem tego twierdzenia (dwa wyznaczniki 3x3 - ten sam przyklad 
+co na poczatku wykladu, jeden wyznacznik 4x4)
+4) Podalem twierdzenie wyliczajace wybrane wlasnosci wyznacznikow
+5) Obliczylem z pomoca tego twierdzenia (znacznie szybciej) wyznacznik 4x4 z poprzedniego przykladu
+6) Wprowadzilem pojecie ukladow Cramera, wyprowadzilem twierdzenie o tych ukladach i wzory Cramera dla
+przypadku ukladow 3x3
+7) Rozwiazalem z pomoca tego twierdzenia uklad rownan 3x3 oraz wyznaczylem jedna niewiadoma 
+z ukladu rownan 4x4 (macierze wspolczynnikow w obu ukladach byly macierzami, z ktorych we wczesniejszych
+przykladach obliczalem wyznaczniki)

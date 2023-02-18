@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=2cm, bottom=2cm, left=2cm,
+right=2cm, nohead}
+\begin{document}
+
+
+\noindent
+\LARGE{WARUNKI ZALICZENIA ÆWICZEÑ Z PRZEDMIOTU MATEMATYKA 3}
+\begin{itemize}
+	\item Podczas zajêæ odbêd¹ siê dwa sprawdziany, za ka¿dy bêdzie mo¿na uzyskaæ \textbf{45} punktów, dodatkowo ka¿da odpowiedŸ danego studenta przy tablicy bêdzie oceniana, przy czym samodzielne zg³oszenie siê do tablicy bêdzie oceniane wy¿ej ni¿ odpowiedŸ po uprzednim wywo³aniu do tablicy. Po zsumowaniu bêdzie mo¿na uzyskaæ za odpowiedzi przy tablicy maksymalnie \textbf{10} punktów. £¹cznie za zajêcia mo¿na otrzymaæ maksymalnie $3\times 45 + 10 = \textbf{100}$ punktów.
+	
+	\item Pojedynczy sprawdzian bêdzie sk³ada³ siê z czterech zadañ, pierwsze trzy punktowane w skali $0-10$ pkt, ostatnie w skali $0 - 15$ pkt; sprawdzian uznaje siê za zaliczony, jeœli student uzyska³ za niego conajmniej \textbf{22} punktów.
+	
+	\item Oto warunki zaliczenia przedmiotu (aby uzyskaæ zaliczenie nale¿y spe³niæ obydwa):
+	\begin{enumerate}
+		\item uzyskanie za zajêcia conajmniej \textbf{50} punktów
+		\item zaliczenie wszystkich sprawdzianów
+	\end{enumerate}
+	
+	
+	\item Oto progi ocen z æwiczeñ w zale¿noœci od iloœci punktów $x$ zgromadzonej przez danego studenta:
+	\begin{itemize}
+		\item \textcolor{red}{$x<50$} -- brak zaliczenia
+		\item \textcolor{green}{$50\leq x<60$} -- zaliczenie na ocenê $3{,}0$
+		\item \textcolor{green}{$60\leq x<70$} -- zaliczenie na ocenê $3{,}5$
+		\item \textcolor{green}{$70\leq x<80$} -- zaliczenie na ocenê $4{,}0$
+		\item \textcolor{green}{$80\leq x<90$} -- zaliczenie na ocenê $4{,}5$
+		\item \textcolor{green}{$90\leq x$} -- zaliczenie na ocenê $5{,}0$
+	\end{itemize}
+	
+	\item Na ostatnich zajêciach odbêdzie siê poprawa z ca³ego zakresu materia³u, dla osób które nie uzyska³y zaliczenia. Do rozwi¹zania bêdzie $6$ zadañ (po dwa z ka¿dego sprawdzianu), ka¿de punktowane w skali $0-10$ punktów. Oto progi ocen dla tej poprawy:
+	\begin{itemize}
+		\item \textcolor{red}{$x<30$} -- brak zaliczenia
+		\item \textcolor{green}{$30\leq x<40$} -- zaliczenie na ocenê $3{,}0$
+		\item \textcolor{green}{$40\leq x<50$} -- zaliczenie na ocenê $3{,}5$
+		\item \textcolor{green}{$50\leq x$} -- zaliczenie na ocenê $4{,}0$
+	\end{itemize}
+	Jeœli dany student bêdzie chcia³ uzyskaæ ocenê wy¿sz¹ ni¿ $4$ mo¿e j¹ poprawiæ przez odpowiedŸ ustn¹. Poprawy æwiczeñ w sesji i w sesji poprawkowej bêd¹ wygl¹da³y podobnie.
+	
+	\item Studenci, którzy nie zalicz¹ tylko jednego sprawdzianu lub, którzy bêd¹ chcieli poprawiæ tylko jeden sprawdzian aby uzyskaæ lepsz¹ ocenê mog¹ przyst¹piæ do poprawy na ostatnich zajêciach, wtedy obowi¹zuj¹ ich zadania dotycz¹ce tylko tego niezaliczonego (lub poprawianego) sprawdzianu, dodatkowo takim studentom podyktujê zadanie $3$ z tego sprawdzianu.\\ 
+	UWAGA! Taka mo¿liwoœæ istnieje tylko dla poprawy na ostatnich zajêciach i nie bêdzie jej podczas poprawy w sesji i w sesji poprawkowej.
+	
+	\item Zasady przyznawania punktów za aktywnoœæ na zajêciach:
+	\begin{enumerate}
+		\item $100\%$ obecnoœci na zajêciach daje wstêpnie $4$ punkty za aktywnoœæ na zajêciach; conajmniej $90\%$ obecnoœci na zajêciach ale mniej ni¿ $100\%$ daje wstêpnie $3$ punkty za aktywnoœæ na zajêciach; conajmniej $80\%$ obecnoœci na zajêciach ale mniej ni¿ $90\%$ daje wstêpnie $2$ punkty za aktywnoœæ na zajêciach; conajmniej $70\%$ obecnoœci na zajêciach ale mniej ni¿ $80\%$ daje wstêpnie $1$ punkt za aktywnoœæ na zajêciach.
+		\item Jeœli dany student zg³osi siê samodzielnie do tablicy, to do wstêpnie przyznanych punktów za aktywnoœæ dodaje siê jeden punkt.
+		\item Jeœli dany student zostanie wywo³any do tablicy i dobrze rozwi¹¿e zadanie przy tablicy, to do wstêpnie przyznanych punktów dodaje siê $\frac 13$ punktu aktywnoœci na zajêciach.
+		\item Jeœli dany student zostanie wywo³any do tablicy i niepoprawnie rozwi¹¿e zadanie przy tablicy lub odmówi wyjœcia do tablicy, to od wstêpnie przyznanych punktów odejmie siê $1$ punkt aktywnoœci na zajêciach.
+		\item iloœæ punktów za aktywnoœæ na zajêciach, to liczba nieujemna niewiêksza od dziesiêciu wyznaczona wedle regu³ opisanych w poprzednich punktach.
+	\end{enumerate}
+	
+	\item \textbf{UWAGA!} Jeden z punktów regulaminu studiów g³osi\\ 
+	\textit{(...) Nieobecnoœæ studenta, nawet usprawiedliwiona, na wiêcej ni¿ 1/3 zajêæ, mo¿e byæ podstaw¹ do niezaliczenia tych zajêæ.}\\
+	Proszê o tym pamiêtaæ, zw³aszcza to dotyczy studentów powtarzaj¹cych przedmiot.
+\end{itemize}
+
+\noindent
+\LARGE{WARUNKI ZALICZENIA EGZAMINU Z PRZEDMIOTU MATEMATYKA 3}
+\begin{itemize}
+	
+	\item Do egzaminu przystêpuj¹ jedynie studenci posiadaj¹cy zaliczone æwiczenia.\\
+	
+	\item Egzamin sk³ada³ siê bêdzie z $8$ zadañ, zadania $1,2,3,4,5,6$ bêd¹ typu zadañ ze sprawdzianów $1,2,3$ z æwiczeñ (zadania $1$ i $2$ ze sprawdzianu $1$; zadania $3$ i $4$ ze sprawdzianu $2$; zadania $5$ i $6$ ze sprawdzianu $3$), bêd¹ one punktowane w skali $0-10$ pkt.; zadania $7$ i $8$ bêd¹ trudniejsze, bêd¹ punktowane w skali $0-20$ punktów; tak wiêc za egzamin maksymalnie bêdzie mo¿na uzyskaæ $100$ punktów.\\
+	
+	\item Oto progi ocen z egzaminu w zale¿noœci od iloœci punktów $x$ zgromadzonej przez danego studenta:
+	\begin{itemize}
+		\item \textcolor{red}{$x<50$} -- brak zaliczenia
+		\item \textcolor{green}{$50\leq x<60$} -- zaliczenie na ocenê $3{,}0$
+		\item \textcolor{green}{$60\leq x<70$} -- zaliczenie na ocenê $3{,}5$
+		\item \textcolor{green}{$70\leq x<80$} -- zaliczenie na ocenê $4{,}0$
+		\item \textcolor{green}{$80\leq x<90$} -- zaliczenie na ocenê $4{,}5$
+		\item \textcolor{green}{$90\leq x$} -- zaliczenie na ocenê $5{,}0$
+	\end{itemize}
+
+	\item Egzamin w sesji poprawkowej bêdzie wygl¹da³ nieco inaczej: do rozwi¹zania bêdzie $8$ zadañ, ka¿de punktowane w skali $0-10$ pkt., progi ocen:
+	\begin{itemize}
+		\item \textcolor{red}{$x<40$} -- brak zaliczenia
+		\item \textcolor{green}{$40\leq x<60$} -- zaliczenie na ocenê $3{,}0$
+		\item \textcolor{green}{$60\leq x<70$} -- zaliczenie na ocenê $3{,}5$
+		\item \textcolor{green}{$70\leq x\leq 80$} -- zaliczenie na ocenê $4{,}0$
+	\end{itemize}
+	Podczas tego egzaminu ka¿dy student mo¿e korzystaæ z karty wzorów, któr¹ wczeœniej opublikujê na swojej stronie (o ile wydrukuje sobie t¹ kartê wzorów i przyniesie j¹ na egzamin). Osoby , które chc¹ ocenê wy¿sz¹ ni¿ $4{,}0$ i uzyska³y $4{,}0$ z zaliczenia, mogê dopytaæ na lepsz¹ ocenê.
+	
+	\item Dodatkowo zamierzam zorganizowaæ egzamin w przed³u¿onej sesji poprawkowej (przy za³o¿eniu, ¿e sesja zostanie przed³u¿ona). Do rozwi¹zania bêdzie $6$ zadañ, ka¿de punktowane w skali $0-10$ pkt., progi ocen:
+	\begin{itemize}
+		\item \textcolor{red}{$x<30$} -- brak zaliczenia
+		\item \textcolor{green}{$30\leq x<40$} -- zaliczenie na ocenê $3{,}0$
+		\item \textcolor{green}{$40\leq x<50$} -- zaliczenie na ocenê $3{,}5$
+		\item \textcolor{green}{$60\leq x$} -- zaliczenie na ocenê $4{,}0$
+	\end{itemize}
+	Podczas tego egzaminu ka¿dy student mo¿e korzystaæ z karty wzorów, któr¹ wczeœniej opublikujê na swojej stronie (o ile wydrukuje sobie t¹ kartê wzorów i przyniesie j¹ na egzamin). Osoby , które chc¹ ocenê wy¿sz¹ ni¿ $4{,}0$ i uzyska³y $4{,}0$ z zaliczenia, mogê dopytaæ na lepsz¹ ocenê.\\
+	UWAGA! Warunkiem przyst¹pienia do tego egzaminu jest oddanie wszystkich prac domowych, które zosta³y opublikowane na mojej stronie przed ka¿dym sprawdzianem na æwiczeniach.
+	
+	
+\end{itemize}
+
+
+\end{document}

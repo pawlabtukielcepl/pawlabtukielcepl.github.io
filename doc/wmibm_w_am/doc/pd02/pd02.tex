@@ -1,0 +1,177 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm,
+right=1.5cm, nohead}
+\usepackage{amsmath,amssymb,amsfonts}
+\begin{document}
+\begin{center}
+\large{\textbf{PRACA DOMOWA II}}
+\end{center}
+
+\noindent
+imiê i nazwisko ........................................\\
+
+
+\noindent
+\textbf{Zadanie 1} Wyznaczyæ przedzia³y monotonicznoœci podanych funkcji oraz ich ekstrema lokalne:\\
+\textbf{(a)} $y = 3 x^4+x^3-2 x^2-x + 2$, 
+\textbf{(b)} $y = (2x+3)^6(3x+2)^8$, 
+\textbf{(c)} $y =\frac{x^2 - 3x + 4}{x - 3}$,  
+\textbf{(d)} $y =  e^{-x^2} (2x+1)$.\\
+
+\vspace{0.25cm}
+
+\noindent\textbf{odpowiedzi}:\\ 
+\textbf{(a)} $y\nearrow$ dla $x\in \left(-\frac{\sqrt{3}}{3},-\frac 14 \right) ,\ x\in \left(\frac{\sqrt{3}}{3},+\infty\right)$, 
+$y\searrow$ dla $x\in \left(-\infty,-\frac{\sqrt{3}}{3}\right),\ x\in\left(-\frac 14,\frac{\sqrt{3}}{3}\right)$, maksimum lokalne dla $x = -\frac{\sqrt{3}}{3}$, minima lokalne dla $x = -\frac 14$, $x = \frac{\sqrt{3}}{3}$,\\ 
+\textbf{(b)} $y\nearrow$ dla $x \in (-3/2,-8/7), x\in (-2/3,+\infty)$, 
+$y\searrow$ dla $x\in (-\infty,-3/2), x\in (-7/8,-2/3)$, maksimum lokalne dla $x = -7/8$, minima lokalne dla $x = -3/2$, $x = -2/3$,\\ 
+\textbf{(c)} $y\nearrow$ dla $x\in (-\infty,1),x\in(5,\infty)$, 
+$y\searrow$ dla $x\in(1,3)$, $x\in(3,5)$, maksimum lokalne dla $x = 1$, minimum lokalne dla $x = 5$,\\ 
+\textbf{(d)} $y\nearrow$ dla $x\in (-\infty, -1), x\in(1/2,\infty)$, $y\searrow$ dla $x\in(-1,1/2)$, maksimum lokalne dla $x = 1/2$, minimum lokalne dla $x = -1$.\\
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,18cm);
+	\foreach \y in {0,...,36}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,27cm);
+	\foreach \y in {0,...,54}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\newpage
+
+\noindent
+Poni¿ej: $f$ -- funkcja ci¹g³a dla $a\leq x \leq b$, $m, M$ -- odpowiednio najmniejsza i najwiêksza wartoœæ funkcji $f$ dla $a\leq x \leq b$, $c$ -- pewna liczba zawarta pomiêdzy $a$ i $b$.
+$$
+\text{(1): } m\cdot (b-a) \leq \int\limits_{a}^{b} f(x)dx \leq M\cdot (b-a)\text{, (2): } \int\limits_{a}^{b} f(x)dx = \int\limits_{a}^{c} f(x)dx + \int\limits_{c}^{b} f(x)dx
+$$
+\noindent
+\textbf{Zadanie 2} \\
+\textbf{(a)}\\ 
+1) W oparciu o regu³ê de l'Hospitala oblicz granicê $\lim\limits_{x\rightarrow -1} \frac{2 x^3+5 x^2+4 x+1}{3 x^3+8 x^2+7 x+2}$,\\ 
+2) Oszacuj ca³kê oznaczon¹ $\int\limits_{0}^{2} (4-x^2)dx$ w oparciu o w³asnoœci (1) i (2) dziel¹c przedzia³ ca³kowania na dwa przedzia³y równej d³ugoœci.\\
+\textbf{(b)}\\ 
+1) W oparciu o regu³ê de l'Hospitala oblicz granicê $\lim\limits_{x\rightarrow 0} \frac{\sin(3x)}{e^{4x}-1}$,\\ 
+2) Oszacuj ca³kê oznaczon¹ $\int\limits_{1}^{2} (4x-x^2)dx$ w oparciu o w³asnoœci (1) i (2) dziel¹c przedzia³ ca³kowania na dwa przedzia³y równej d³ugoœci.\\
+\textbf{(c)}\\ 
+1) W oparciu o regu³ê de l'Hospitala oblicz granicê $\lim\limits_{x\rightarrow 0} \frac{x\sin x}{1-\cos(5x)}$,\\ 
+2) Oszacuj ca³kê oznaczon¹ $\int\limits_{-\frac 12}^{1} (x^2 + 2)dx$ w oparciu o w³asnoœci (1) i (2) dziel¹c przedzia³ ca³kowania na dwa przedzia³y równej d³ugoœci.\\
+\textbf{(d)}\\ 
+1) W oparciu o regu³ê de l'Hospitala oblicz granicê $\lim\limits_{x\rightarrow 0} \frac{\ln(\cos x)}{\sin^2 x}$,\\ 
+2) Oszacuj ca³kê oznaczon¹ $\int\limits_{1}^{5} (x^2 - 4x + 5)dx$ w oparciu o w³asnoœci (1) i (2) dziel¹c przedzia³ ca³kowania na dwa przedzia³y równej d³ugoœci.\\
+
+\vspace{0.25cm}
+
+\noindent\textbf{odpowiedzi}:\\ 
+\textbf{(a)} 
+1) $1$, 
+2) $3\leq \int\limits_{0}^{2} (4-x^2)dx\leq 7$, 
+\textbf{(b)} 
+1) $\frac 34$, 
+2) $\frac{27}{8}\leq \int\limits_{1}^{2} (4x-x^2)dx\leq \frac{31}{8}$, 
+\textbf{(c)} 
+1) $\frac{2}{25}$, 
+2) $\frac{195}{64}\leq \int\limits_{-\frac{1}{2}}^{1} (x^2+2)dx\leq \frac{63}{16}$, 
+\textbf{(d)} 
+1) $-\frac{1}{2}$, 
+2) $6 \leq \int\limits_{1}^{3} (4-x^2)dx\leq 24$. 
+
+\newpage
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,27cm);
+		\foreach \y in {0,...,54}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\newpage
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,27cm);
+		\foreach \y in {0,...,54}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\newpage
+
+\noindent
+\textbf{Zadanie 3} Oblicz ca³ki nieoznaczone:\\ 
+%1) prosta calka, glownie wzor na x^alpha,
+%2) calkowanie przez podstawienie
+%3) calkowanie przez czesci
+\textbf{(a)} 1) $\int \left(\frac{5}{\cos^2 x} - 3 x^2 + \frac{1}{\sqrt[3]{x}}\right)dx$, 
+2) $\int \frac{(2x-3)dx}{(x^2 - 3x + 5)^2}$, 3) $\int x \ln x dx$,\\
+\textbf{(b)} 1) $\int \left(\frac{2}{x} + \frac{3}{x^2} - 4\sin x\right)dx$, 
+2) $\int \frac{dx}{x (1-2\ln x)^3}$, 3) $\int x \cos(3x) dx$,\\
+\textbf{(c)} 1) $\int \left(\frac{5}{\sqrt[4]{x^3}} - \frac{4}{x^2 + 1} + e^x\right)dx$, 
+2) $\int \frac{\cos x dx}{\sqrt{1+3\sin x}}$, 3) $\int x\,\text{arctg}\,x dx$,\\
+\textbf{(d)} 1) $\int \left(\frac{2}{\sqrt{1-x^2}} - 5\cos x + \frac{3}{\sqrt[3]{x^4}}\right)dx$, 
+2) $\int \frac{\sin\left(\frac{1}{x^2}\right)dx}{x^3}$, 3) $\int \sin(3x)\sin(5x) dx$.\\
+
+
+\vspace{0.25cm}
+\noindent
+\textbf{odpowiedzi}: \\
+\textbf{(a)} 1) $5\,\text{tg}\,x - x^3 + \frac{3}{2}\sqrt[3]{x^2} + C$,
+2) $-\frac{1}{x^2 -3x+5} + C$, 3) $\frac{x^2}{2}\ln x - \frac{x^2}{4} + C$,\\ 
+\textbf{(b)} 1) $2\ln x - \frac{3}{x} + 4\cos x + C$,
+2) $\frac{1}{4 (1 - 2 \ln x)^2} + C$, 3) $\frac{1}{3} x \sin (3 x)+\frac{1}{9} \cos (3 x) + C$,\\ 
+\textbf{(c)} 1) $20\sqrt[4]{x}  - 4\,\text{arctg}\,x+e^x + C $,
+2) $\frac{2}{3} \sqrt{3 \sin (x)+1} + C$, 3) $\frac{1}{2} x^2\,\text{arctg}\,x-\frac{x}{2}+\frac{1}{2} \,\text{arctg},x + C$,\\  
+\textbf{(d)} 1) $2\arcsin x - 5\sin x - \frac{15}{\sqrt[3]{x}} + C$, 2) $\frac{1}{2} \cos\left(\frac{1}{x^2}\right) + C$, 3) $\frac{5}{16}\sin(3x)\sin(5x) + \frac{3}{16}\cos(3x)\cos(5x) + C$.\\
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,19cm);
+		\foreach \y in {0,...,38}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,27cm);
+		\foreach \y in {0,...,54}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\end{document}

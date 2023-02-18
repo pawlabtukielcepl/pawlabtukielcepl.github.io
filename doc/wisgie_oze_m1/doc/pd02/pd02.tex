@@ -1,0 +1,157 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm,
+right=1.5cm, nohead}
+\usepackage{amsmath,amssymb,amsfonts}
+\begin{document}
+\begin{center}
+\large{\textbf{PRACA DOMOWA II}}
+\end{center}
+
+\noindent
+imiê i nazwisko ........................................\\
+
+
+
+\noindent
+\textbf{Zadanie 1}  oraz oblicz sumy odwrotnoœci pierwiastków ró¿nych od zera:\\ 
+\textbf{(a)}\\ 
+1) Rozwi¹¿ równanie $z^3-z^2+3 z+5 = 0$ w liczbach zespolonych.\\ 
+2) Zapisz liczbê $w =(1-3i)(3+2i) - \frac{3+i}{2-i}$ w postaci $a+bi$, $a,b\in\mathbb{R}$.\\ 
+\textbf{(b)}\\ 
+1) Rozwi¹¿ równanie $z^4+6 z^2+8 = 0$ w liczbach zespolonych.\\ 
+2) Zapisz liczbê $w = \frac{2-i}{2+i} - \frac{i}{1-2i}$ w postaci $a+bi$, $a,b\in\mathbb{R}$.\\ 
+\textbf{(c)}\\ 
+1) Rozwi¹¿ równanie $z^2 + 15 + 8i = 0$ w liczbach zespolonych.\\ 
+2) Zapisz liczbê $w =  \frac{2-3i^{23}}{3+2i^{71}}$ w postaci $a+bi$, $a,b\in\mathbb{R}$.\\
+\textbf{(d)}\\ 
+1) Rozwi¹¿ równanie $z^3 + 27 = 0$ w liczbach zespolonych.\\ 
+2) Zapisz liczbê $w = (1-2i)^3 - \frac{3+i}{1+i}$ w postaci $a+bi$, $a,b\in\mathbb{R}$.\\
+
+
+\noindent
+\textbf{odpowiedzi}:\\ 
+\textbf{(a)} 1) $z = -1$, $z = 1 - 2i$, $z = 1 + 2i$, 2) $w = 8 - 8i$. 
+\textbf{(b)} 1) $z = 2i$, $z = -2i$, $z = i\sqrt{2}$, $z = -i\sqrt{2}$, 2) $w = 1 - i$\\
+\textbf{(c)} 1) $z = 1- 4i$, $z = -1 + 4i$, 2) $w = i$. 
+\textbf{(d)} 1) $z = -3$, $z = \frac{3}{2}+\frac{3 i \sqrt{3}}{2}$, $z = \frac{3}{2}-\frac{3 i \sqrt{3}}{2}$, 2) $w = -13 + 3i$.\\
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,18cm);
+	\foreach \y in {0,...,36}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,27cm);
+	\foreach \y in {0,...,54}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\pagebreak
+
+\noindent
+\textbf{Zadanie 2} Oblicz ca³ki nieoznaczone:\\ 
+%1) prosta calka, glownie wzor na x^alpha,
+%2) calkowanie przez podstawienie
+%3) calkowanie przez czesci
+\textbf{(a)} 1) $\int \left(\frac{5}{\cos^2 x} - 3 x^2 + \frac{1}{\sqrt[3]{x}}\right)dx$, 
+2) $\int \frac{(2x-3)dx}{(x^2 - 3x + 5)^2}$, 3) $\int x \ln x dx$,\\
+\textbf{(b)} 1) $\int \left(\frac{2}{x} + \frac{3}{x^2} - 4\sin x\right)dx$, 
+2) $\int \frac{dx}{x (1-2\ln x)^3}$, 3) $\int x \cos(3x) dx$,\\
+\textbf{(c)} 1) $\int \left(\frac{5}{\sqrt[4]{x^3}} - \frac{4}{x^2 + 1} + e^x\right)dx$, 
+2) $\int \frac{\cos x dx}{\sqrt{1+3\sin x}}$, 3) $\int x\,\text{arctg}\,x dx$,\\
+\textbf{(d)} 1) $\int \left(\frac{2}{\sqrt{1-x^2}} - 5\cos x + \frac{3}{\sqrt[3]{x^4}}\right)dx$, 
+2) $\int \frac{\sin\left(\frac{1}{x^2}\right)dx}{x^3}$, 3) $\int \sin(3x)\sin(5x) dx$.\\
+
+
+\vspace{0.25cm}
+\noindent
+\textbf{odpowiedzi}: \\
+\textbf{(a)} 1) $5\,\text{tg}\,x - x^3 + \frac{3}{2}\sqrt[3]{x^2} + C$,
+2) $-\frac{1}{x^2 -3x+5} + C$, 3) $\frac{x^2}{2}\ln x - \frac{x^2}{4} + C$,\\ 
+\textbf{(b)} 1) $2\ln x - \frac{3}{x} + 4\cos x + C$,
+2) $\frac{1}{4 (1 - 2 \ln x)^2} + C$, 3) $\frac{1}{3} x \sin (3 x)+\frac{1}{9} \cos (3 x) + C$,\\ 
+\textbf{(c)} 1) $20\sqrt[4]{x}  - 4\,\text{arctg}\,x+e^x + C $,
+2) $\frac{2}{3} \sqrt{3 \sin (x)+1} + C$, 3) $\frac{1}{2} x^2\,\text{arctg}\,x-\frac{x}{2}+\frac{1}{2} \,\text{arctg},x + C$,\\  
+\textbf{(d)} 1) $2\arcsin x - 5\sin x - \frac{15}{\sqrt[3]{x}} + C$, 2) $\frac{1}{2} \cos\left(\frac{1}{x^2}\right) + C$, 3) $\frac{5}{16}\sin(3x)\sin(5x) + \frac{3}{16}\cos(3x)\cos(5x) + C$.\\
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,19cm);
+	\foreach \y in {0,...,38}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,27cm);
+	\foreach \y in {0,...,54}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\pagebreak
+
+\noindent
+\textbf{Zadanie 3} Oblicz ca³ki nieoznaczone, sprawdŸ poprawnoœæ obliczeñ:\\
+%calki z funkcji wymiernych: (a) delta>0, (b) delta = 0, (c) delta < 0
+\textbf{(a)} $\int \frac{(13-5 x)dx}{6 x^2+x-2} dx$, 
+\textbf{(b)} $\int \frac{6 x-1}{9 x^2+12 x+4} dx$, 
+\textbf{(c)} $\int \frac{5 x+14}{x^2+4 x+13} dx $\\
+
+\vspace{0.25cm}
+\noindent
+\textbf{odpowiedzi}: 
+\textbf{(a)} $\frac{3}{2} \ln (1-2 x)-\frac{7}{3} \ln (3 x+2) + C$ , 
+\textbf{(b)} $\frac{5}{3 (3 x+2)}+\frac{2}{3} \ln (3 x+2) + C$, \\
+\textbf{(c)} $\frac{5}{2} \ln \left(x^2+4 x+13\right)+\frac{4}{3}\,\text{arctg}\left(\frac{x+2}{3}\right) + C$, 
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,19cm);
+	\foreach \y in {0,...,38}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,27cm);
+	\foreach \y in {0,...,54}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\end{document}

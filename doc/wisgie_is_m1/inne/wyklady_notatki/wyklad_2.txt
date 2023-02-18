@@ -1,0 +1,7 @@
+Wyklad 2 (4/11/2022->zamiast cwiczen) odbywal sie przy tablicy (w sali nie dzialal projektor).
+Podczas wykladu zrealizowalem:
+a) wyprowadzilem wzory na pochodne
+b) podalem komplet wzorow na pochodne i reguly rozniczkowania
+c) omowilem zagadnienie pochodnych wyzszych rzedow
+d) podalem interpretacje fizyczna drugiej pochodnej (przyklad: wahadlo matematyczne)
+e) kilka przykladow obliczania pochodnych drugiego rzedu

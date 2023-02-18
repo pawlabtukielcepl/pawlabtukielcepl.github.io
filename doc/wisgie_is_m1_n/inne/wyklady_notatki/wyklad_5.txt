@@ -1,0 +1,8 @@
+a) zdefiniowalem calke oznaczona
+b) policzylem jeden przyklad w oparciu o definicje
+c) udowodnilem podstawowe twierdzenie rachunku rozniczkowego i calkowego
+d) policzylem kilka przykladowych calek oznaczonych z wykorzystaniem tego twierdzenia
+e) zdefiniowalem calke nieoznaczona, podalem wzory na znane calki nieoznaczone
+f) policzylem kilka przykladow calek nieoznaczonych z wykorzystaniem wzorow z katalogu znanych calek
+nieoznaczonych i z wykorzystaniem liniowosci operacji calkowania
+g) omowilem calkowanie przez podstawianie i przerobilem kilka przykladow

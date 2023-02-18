@@ -1,0 +1,9 @@
+1) srednia arytmetyczna/geometryczna dla dwoch zmiennych -> patrz odpowiedni katalog z filmem
+2) zrodlo: Lecture Notes on MO (junior, vol. 1, rozdzial 4) TQ(A).7, rozwiazanie, str. 116
+3) zrodlo: Lecture Notes on MO (junior, vol. 1, rozdzial 11) Example 1, str. 66
+4) zrodlo: gazetka kwadrat, numer drugi, Tozsamosc Diofantosa, zadanie 1. link: https://omj.edu.pl/uploads/attachments/kwadrat_02-czerwony.pdf
+5) zrodlo: Lecture Notes on MO (junior, vol. 1, rozdzial 15) TQ(A).9, rozwiazanie str. 166
+6) zrodlo: Lecture Notes on MO (senior, vol. 2, rozdzial 28), Example 4, rozwiazanie str. 118
+7) zrodlo: https://www.facebook.com/groups/150651275737182
+8) 50 OM, II etap, zad. 5, zrodlo: https://om.mimuw.edu.pl/static/app_main/problems/om50_2.pdf, 
+   	                   rozwiazanie: https://om.mimuw.edu.pl/static/app_main/problems/om50_2r.pdf

@@ -1,0 +1,144 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1cm, bottom=1cm, left=1.5cm,
+right=1.5cm, nohead}
+\begin{document}
+\begin{center}
+\large{\textbf{Egzamin z matematyki 1 (WIŒGiE/IŒ, termin pierwszy), 05/02/2023}}
+\end{center}
+
+\noindent
+\textbf{Zadanie 1 (0-10 pkt.)} Oblicz pochodne: 
+$\left(\frac{3}{x^5} - \frac{5}{\sqrt[5]{x^9}}\right)'$, 
+$\left( \frac{\arcsin x}{5^x} \right)'$, 
+$\left( \sin x \cos(x^5) \right)'$. 
+
+
+\noindent
+\textbf{Zadanie 2 (0-10 pkt.)}  Zapisz wzór Taylora dla funkcji $f(x) = \sqrt{x}$ w okolicy $x_0 = 4$ z dok³adnoœci¹ do wyrazów drugiego rzêdu. Wykorzystaj uzyskany wzór do wyznaczenia przybli¿onej wartoœci $\sqrt{4,2}$. 
+
+
+\noindent
+\textbf{Zadanie 3 (0-10 pkt.)}  Wyznacz przedzia³y monotonicznoœci i ekstrema lokalne funkcji: 
+$y = 3 x^4-8 x^3-18 x^2+72 x$.
+
+\noindent
+\textbf{Zadanie 4 (0-10 pkt.)}  Oblicz ca³kê: 
+$\int \frac{3x + 2}{x^2 + 4x + 4} dx$. 
+
+\noindent
+\textbf{Zadanie 5 (0-10 pkt.)}  Oblicz ca³ki oznaczone: 
+$\int\limits_{1}^{4} \left(\sqrt{x} - \frac{1}{x^2}\right) dx$, 
+$\int\limits_{0}^{2} \frac{x dx}{\sqrt{3x^2 + 4}}$.
+
+\noindent
+\textbf{Zadanie 6 (0-10 pkt.)}  Wyznacz pole obszaru ograniczonego liniami  $y = x^2 - 3x$, $y = -x^2 -2x + 1$. Wykonaj rysunek! 
+
+\noindent
+\textbf{Zadanie 7 (0-20 pkt.)}  W oparciu o definicjê oblicz pochodn¹ podanej funkcji $f(x) = 2x^2-3x+1$ w punkcie $x_0 = 1$. Zapisz równanie stycznej do wykresu funkcji w punkcie $(x_0,f(x_0))$, naszkicuj pogl¹dowy wykres funkcji oraz stycznej.  
+
+\noindent
+\textbf{Zadanie 8 (0-20 pkt.)}\\ 
+W oparciu o rachunek ca³kowy wyznacz po³o¿enie œrodka ciê¿koœci obszaru ograniczonego liniami $y = x^2$, $y = 2x$, jeœli wiadomo, ¿e pole obszaru wynosi $S = \frac 43$.
+
+\vspace{0.5cm}
+
+\begin{center}
+	\large{\textbf{Egzamin z matematyki 1 (WIŒGiE/IŒ, termin pierwszy), 05/02/2023}}
+\end{center}
+
+\noindent
+\textbf{Zadanie 1 (0-10 pkt.)} Oblicz pochodne: 
+$\left(\frac{3}{x^5} - \frac{5}{\sqrt[5]{x^9}}\right)'$, 
+$\left( \frac{\arcsin x}{5^x} \right)'$, 
+$\left( \sin x \cos(x^5) \right)'$. 
+
+
+\noindent
+\textbf{Zadanie 2 (0-10 pkt.)}  Zapisz wzór Taylora dla funkcji $f(x) = \sqrt{x}$ w okolicy $x_0 = 4$ z dok³adnoœci¹ do wyrazów drugiego rzêdu. Wykorzystaj uzyskany wzór do wyznaczenia przybli¿onej wartoœci $\sqrt{4,2}$. 
+
+
+\noindent
+\textbf{Zadanie 3 (0-10 pkt.)}  Wyznacz przedzia³y monotonicznoœci i ekstrema lokalne funkcji: 
+$y = 3 x^4-8 x^3-18 x^2+72 x$.
+
+\noindent
+\textbf{Zadanie 4 (0-10 pkt.)}  Oblicz ca³kê: 
+$\int \frac{3x + 2}{x^2 + 4x + 4} dx$. 
+
+\noindent
+\textbf{Zadanie 5 (0-10 pkt.)}  Oblicz ca³ki oznaczone: 
+$\int\limits_{1}^{4} \left(\sqrt{x} - \frac{1}{x^2}\right) dx$, 
+$\int\limits_{0}^{2} \frac{x dx}{\sqrt{3x^2 + 4}}$.
+
+\noindent
+\textbf{Zadanie 6 (0-10 pkt.)}  Wyznacz pole obszaru ograniczonego liniami  $y = x^2 - 3x$, $y = -x^2 -2x + 1$. Wykonaj rysunek! 
+
+\noindent
+\textbf{Zadanie 7 (0-20 pkt.)}  W oparciu o definicjê oblicz pochodn¹ podanej funkcji $f(x) = 2x^2-3x+1$ w punkcie $x_0 = 1$. Zapisz równanie stycznej do wykresu funkcji w punkcie $(x_0,f(x_0))$, naszkicuj pogl¹dowy wykres funkcji oraz stycznej.  
+
+\noindent
+\textbf{Zadanie 8 (0-20 pkt.)}\\ 
+W oparciu o rachunek ca³kowy wyznacz po³o¿enie œrodka ciê¿koœci obszaru ograniczonego liniami $y = x^2$, $y = 2x$, jeœli wiadomo, ¿e pole obszaru wynosi $S = \frac 43$.
+
+\vspace{0.5cm}
+
+\begin{center}
+	\large{\textbf{Egzamin z matematyki 1 (WIŒGiE/IŒ, termin pierwszy), 05/02/2023}}
+\end{center}
+
+\noindent
+\textbf{Zadanie 1 (0-10 pkt.)} Oblicz pochodne: 
+$\left(\frac{3}{x^5} - \frac{5}{\sqrt[5]{x^9}}\right)'$, 
+$\left( \frac{\arcsin x}{5^x} \right)'$, 
+$\left( \sin x \cos(x^5) \right)'$. 
+
+
+\noindent
+\textbf{Zadanie 2 (0-10 pkt.)}  Zapisz wzór Taylora dla funkcji $f(x) = \sqrt{x}$ w okolicy $x_0 = 4$ z dok³adnoœci¹ do wyrazów drugiego rzêdu. Wykorzystaj uzyskany wzór do wyznaczenia przybli¿onej wartoœci $\sqrt{4,2}$. 
+
+
+\noindent
+\textbf{Zadanie 3 (0-10 pkt.)}  Wyznacz przedzia³y monotonicznoœci i ekstrema lokalne funkcji: 
+$y = 3 x^4-8 x^3-18 x^2+72 x$.
+
+\noindent
+\textbf{Zadanie 4 (0-10 pkt.)}  Oblicz ca³kê: 
+$\int \frac{3x + 2}{x^2 + 4x + 4} dx$. 
+
+\noindent
+\textbf{Zadanie 5 (0-10 pkt.)}  Oblicz ca³ki oznaczone: 
+$\int\limits_{1}^{4} \left(\sqrt{x} - \frac{1}{x^2}\right) dx$, 
+$\int\limits_{0}^{2} \frac{x dx}{\sqrt{3x^2 + 4}}$.
+
+\noindent
+\textbf{Zadanie 6 (0-10 pkt.)}  Wyznacz pole obszaru ograniczonego liniami  $y = x^2 - 3x$, $y = -x^2 -2x + 1$. Wykonaj rysunek! 
+
+\noindent
+\textbf{Zadanie 7 (0-20 pkt.)}  W oparciu o definicjê oblicz pochodn¹ podanej funkcji $f(x) = 2x^2-3x+1$ w punkcie $x_0 = 1$. Zapisz równanie stycznej do wykresu funkcji w punkcie $(x_0,f(x_0))$, naszkicuj pogl¹dowy wykres funkcji oraz stycznej.  
+
+\noindent
+\textbf{Zadanie 8 (0-20 pkt.)}\\ 
+W oparciu o rachunek ca³kowy wyznacz po³o¿enie œrodka ciê¿koœci obszaru ograniczonego liniami $y = x^2$, $y = 2x$, jeœli wiadomo, ¿e pole obszaru wynosi $S = \frac 43$.
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm,
+right=1.5cm, nohead}
+\begin{document}
+\begin{center}
+\large{\textbf{Przyk³adowy zestaw na egzamin z Analizy Matematycznej w przed³u¿onej sesji poprawkowej}}
+\end{center}
+
+\noindent
+\textbf{Zadanie 1} Oblicz pochodne: 
+(a) $\left(\sqrt[3]{x^4} - \frac{1}{x}\right)'$,  
+(b) $\left( x^3 e^{\cos x} \right)'$.\\
+
+\noindent
+\textbf{Zadanie 2} Oblicz ca³ki (a) $\int x^2 (1 + x^3)^4 dx$, (b) $\int \ln x dx$.\\
+
+
+
+\noindent
+\textbf{Zadanie 3} Zapisz wielomian Taylora stopnia II--go dla funkcji $y = \sqrt{x}$ w okolicy $x_0 = 4$. Oblicz za jego pomoc¹ przybli¿on¹ wartoœæ $\sqrt{4{,}1}$.\\
+
+
+\noindent
+\textbf{Zadanie 4}  Wyznacz przedzia³y monotonicznoœci i ekstrema lokalne funkcji: 
+$y = 6 x^4-8 x^3-3 x^2+6 x$.\\
+
+
+\noindent
+\textbf{Zadanie 5} Wyznacz przybli¿on¹ wartoœæ ca³ki $\int\limits_{-1}^{2} x^2 dx$ dziel¹c przedzia³ ca³kowania na \textbf{trzy} równe czêœci, za punkty poœrednie przyj¹æ œrodki kolejnych przedzia³ów. Obliczenia prowadziæ na u³amkach zwyk³ych, wynik podaæ w takiej samej postaci.\\
+
+\noindent
+\textbf{Zadanie 6}  Wyznacz pole obszaru ograniczonego liniami  $y = 2x - x^2$, $y = 2 - x$. Wykonaj rysunek!\\
+
+\noindent
+\textbf{Zadanie 7}  Oblicz $z''_{xy}$, jeœli $z = \ln (xy + 1)$.\\
+
+
+\newpage
+
+\begin{center}
+	\large{\textbf{Odpowiedzi}}
+\end{center}
+
+\noindent
+\textbf{Zadanie 1}\\
+(a) $\left(\sqrt[3]{x^4} - \frac{1}{x}\right)' = \frac{1}{x^2} + \frac{4}{3}\sqrt[3]{x}$,\\  
+(b) $\left( x^3 e^{\cos x} \right)' = 3x^2 e^{\cos x} - x^3 e^{\cos x}\sin x$.\\
+
+\noindent
+\textbf{Zadanie 2}\\
+(a) $\int x^2 (1 + x^3)^4 dx = \frac{1}{15}(x^3 + 1)^{5} + C$, wskazówka: podstawiæ $u = 1 + x^3$,\\ 
+(b) $\int \ln x dx = x \ln x - x + C$, wskazówka: we wzorze na ca³kowanie przez czêœci przyj¹æ: $f(x) = \ln x$, $g'(x) = 1$.\\
+
+\noindent
+\textbf{Zadanie 3}\\
+$W_2(x) = -\frac{1}{64} (x-4)^2+\frac{x-4}{4}+2$,\\
+$\sqrt{4{,}1} \approx W_2(4{,}1) = -\frac{1}{64} (4{,}1-4)^2+\frac{4{,}1-4}{4}+2 = \ldots= \frac{12959}{6400}\approx 2{,}02485$.\\
+
+\noindent
+\textbf{Zadanie 4}\\
+$y' = 24 x^3-24 x^2-6 x+6 = 6 (x-1) (2 x-1) (2 x+1)$,\\
+funkcja roœnie dla $x \in \left(-\frac 12, \frac 12\right),\ x\in \left( 1, +\infty\right)$,\\
+funkcja maleje dla $x \in \left(-\infty, -\frac 12\right),\ x\in \left( \frac 12, 1\right)$,\\
+minima lokalne dla $x = -\frac 12$ oraz dla $x = 1$,\\
+maksimum lokalne dla $x = \frac 12$.\\
+
+\noindent
+\textbf{Zadanie 5}\\
+przedzia³y $I_1 = \langle -1, 0 \rangle,\ I_2 = \langle 0, 1 \rangle,\ I_1 = \langle 1, 2 \rangle$, d³ugoœci przedzia³ów: $\Delta x_1 = \Delta x_2 = \Delta x_3 = 1$, punkty poœrednie: 
+$c_1 = -\frac 12,\ c_2 = \frac 12,\ c_3 = \frac 32$,\\
+przybli¿enie ca³ki: $\int\limits_{-1}^{2} x^2 dx \approx f(c_1) \Delta x_1 + f(c_2) \Delta x_2 + f(c_3) \Delta x_3 = \ldots = \frac{11}{4}$.\\
+
+\noindent
+\textbf{Zadanie 6}\\
+$S = \int\limits_{1}^{2} (2x-x^2 - (2-x)) dx = \ldots = \frac 16$.\\
+
+\noindent
+\textbf{Zadanie 7}\\
+$z''_{xy} = \left(z'_y\right)'_x$, $z'_y = \frac{x}{x y+1}$, $z''_{xy} = \left(\frac{x}{x y+1}\right)'_{x} = \frac{1}{(x y+1)^2}$.
+
+\end{document}

@@ -1,0 +1,169 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm,
+right=1.5cm, nohead}
+\usepackage{amsmath,amssymb,amsfonts}
+\begin{document}
+\begin{center}
+\large{\textbf{PRACA DOMOWA II}}
+\end{center}
+
+\noindent
+imiê i nazwisko ........................................\\
+
+
+\noindent
+\textbf{Zadanie 1} Oblicz ca³ki podwójne przechodz¹c do wspó³rzêdnych biegunowych $r,\varphi$:\\
+\textbf{(a)} $\iint\limits_{D} (x^2+y^2) dxdy$, gdzie $D$: $x^2+y^2\leq 4$, $y\geq -x$, $x\geq 0$,\\
+\textbf{(b)} $\iint\limits_{D} x y^2 dxdy$, gdzie $D$: $1\leq x^2 + y^2 \leq 4$, $y\geq 0$, $y\leq x$,\\
+\textbf{(c)} $\iint\limits_{D} \frac{x y dxdy}{x^2+y^2 + 1}$, gdzie $D$: $x^2 + y^2 \leq 1$, $y\geq \sqrt{3}x$, $x\geq 0$,\\
+\textbf{(d)} $\iint\limits_{D} xy dxdy$, gdzie $D$: $x^2+y^2\leq 2x$, $y\geq 0$\\
+
+\vspace{0.25cm}
+
+\noindent\textbf{odpowiedzi}:\\ 
+\textbf{(a)} $3\pi$, \textbf{(b)} $\frac{31\sqrt{2}}{60}$,  
+\textbf{(c)} $\frac{1-\ln 2}{16}$,  \textbf{(d)} $\frac 23$\\
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,19cm);
+		\foreach \y in {0,...,38}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,27cm);
+		\foreach \y in {0,...,54}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\noindent
+\textbf{Zadanie 2} \\
+\textbf{(a)} wyznacz objêtoœæ obszaru ograniczonego powierzchniami $x = 0$, $y = 0$, $z = 0$, $3x + 4y + 6z - 12 = 0$,\\
+\textbf{(b)} wyznacz objêtoœæ obszaru ograniczonego powierzchniami $z = 0$, $z = 16 - x^2 - y^2$,\\
+\textbf{(c)} wyznacz po³o¿enie œrodka ciê¿koœci obszaru ograniczonego liniami $y = x$ oraz $y = x^2$,\\ 
+\textbf{(d)} wyznacz po³o¿enie œrodka ciê¿koœci obszaru $D$: $1\leq x^2 + y^2 \leq 4$, $y \geq x$, $x\geq 0$.\\
+
+\vspace{0.25cm}
+
+\noindent
+\textbf{odpowiedzi}:\\ 
+\textbf{(a)} $V = 4$, 
+\textbf{(b)} $V = 128\pi$, 
+\textbf{(c)} $G = \left(\frac 1 2, \frac 2 5\right)$, 
+\textbf{(d)} $G\left(\frac{28(2-\sqrt{2})}{9\pi}, \frac{28\sqrt{2}}{9\pi}\right)$.
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,22cm);
+		\foreach \y in {0,...,44}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,27cm);
+		\foreach \y in {0,...,54}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\noindent
+\textbf{Zadanie 3} Rozwi¹¿ równania ró¿niczkowe:\\ 
+\textbf{(a)} $\frac{y'}{x^2} - y^2 = 0,\ y(0) = 1$, 
+\textbf{(b)} $ y' x^3 - 2y = 0,\ y(1) = \frac 1e$, 
+\textbf{(c)} $\frac{y'}{\cos x} + 4\sin x \cos^2 y = 0,\ y\left(\frac{\pi}{4}\right) = 0$, \\
+\textbf{(d)} $\frac{y'}{x} - \frac{1}{y^2\sqrt{x^2 + 1}} = 0,\ y(0) = 1$.
+
+\vspace{0.25cm}
+
+\noindent
+\textbf{odpowiedzi}:\\ 
+\textbf{(a)} $y(x) = \frac{3}{3-x^3}$, 
+\textbf{(b)} $y(x) = e^{-\frac{1}{x^2}}$, 
+\textbf{(c)} $y(x) = \text{arctg}(\cos(2x))$, 
+\textbf{(d)} $y(x) = \sqrt[3]{3\sqrt{x^2+1} - 2}$.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,23cm);
+		\foreach \y in {0,...,46}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,27cm);
+		\foreach \y in {0,...,54}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\noindent
+\textbf{Zadanie 4} Rozwi¹¿ równania ró¿niczkowe:\\
+\textbf{(a)} $3y''-4y'+y = 16 e^{3x}$, 
+\textbf{(b)} $y'' + 4y' + 13y = \sin(3x)$, 
+\textbf{(c)} $y''-4y'+4y = 2 e^{2x}$, 
+\textbf{(d)} $y'' + 4y' + 5y = 25x^2$.
+
+\vspace{0.25cm}
+
+\noindent
+\textbf{odpowiedzi}:\\ 
+\textbf{(a)} $y(x) = C_1 e^{x/3} + C_2 e^x + e^{3x}$, 
+\textbf{(b)} $y(x) = e^{-2x}(C_1\cos(3x) + C_2\sin(3x)) + \frac{1}{40}\sin(3x) - \frac{3}{40}\cos(3x)$,\\ 
+\textbf{(c)} $y(x) = C_1 e^{2x} + C_2 x e^{2x} + x^2 e^{2x}$, 
+\textbf{(d)} $y(x) = e^{-2x}(C_1\cos x + C_2\sin x) + 5x^2 - 8x + \frac{22}{5}$.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,23cm);
+		\foreach \y in {0,...,46}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\foreach \x in {0,...,34}
+		\draw (0.5*\x,0)--(0.5*\x,27cm);
+		\foreach \y in {0,...,54}
+		\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\end{document}

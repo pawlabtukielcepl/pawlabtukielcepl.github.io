@@ -1,0 +1,2 @@
+2) 101 problems in algebra: problem 32, solution -> str. 48, 49
+3) Lecture Notes, Math Olympiad vol. 1, junior, 1/TQ(B)/3, solution -> str. 105,106

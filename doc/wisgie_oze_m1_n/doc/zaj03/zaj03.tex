@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm,
+right=1.5cm, nohead}
+
+\begin{document}
+
+\begin{center}
+\large{\textbf{ZESTAW ZADAÑ III}}
+\end{center}
+
+\noindent
+\textbf{Zadanie 1}\\
+\textbf{(a)} Zapisz wzór Taylora dla funkcji $f(x) = \frac{2x}{2-x}$ z dok³adnoœci¹ do dwóch wyrazów w okolicy $x_0 = 1$; wykorzystaj otrzymany wzór do przybli¿enia wartoœci funkcji dla $x = 0{,}9$,\\
+\textbf{(b)} Zapisz wzór Taylora dla funkcji $f(x) = \cos x$ z dok³adnoœci¹ do wyrazów $2$--go rzêdu w okolicy $x_0 = 0$. Za pomoc¹ uzyskanego wzoru oblicz przybli¿on¹ wartoœæ $\cos 15^{\circ}$ (wartoœæ podana przez kalkulator: $\cos 15^{\circ} \approx 0{,}96596$; w obliczeniach przyjmij: $\pi\approx 3{,}14$).\\
+
+\noindent
+\textbf{Zadanie 2} \\ 
+Wyznacz przedzia³y monotonicznoœci i ekstrema lokalne podanych funkcji:\\
+\textbf{(a)} $y = -2 x^3+4 x^2+8 x+10$, \textbf{(b)} $y = -x^4+x^3+6 x^2-9 x + 5$, \textbf{(c)} $y = 3x + \frac{1}{x^3}$,\\
+\textbf{(d)} $y = x^5 + (1-x)^5$,  \textbf{(e)} $y = x^4(2x-3)^6$, \textbf{(f)} $y = \frac{2x^2-5x+2}{3x^2-10x+3}$, \textbf{(g)} $y = x^2\ln x$.\\
+
+\noindent
+\textbf{Zadanie 3} Wyznaczaj¹c ekstremum pewnej funkcji oblicz odleg³oœæ punktu $P(2,3)$ od prostej $y = 2x$.\\
+
+\noindent
+\textbf{Zadanie 4} Wyznacz wspó³rzêdne wierzcho³ków trójk¹ta prostok¹tnego o najmniejszym polu, je¿eli wiadomo, ¿e jego przyprostok¹tne le¿¹ na osiach uk³adu wspó³rzêdnych oraz punkt $(3,1)$ nale¿y do przeciwprostok¹tnej.\\
+
+\noindent
+\textbf{Zadanie 5} Asfaltowy odcinek drogi o d³ugoœci $b$ znajduje siê w odleg³oœci (w linii prostej) $a$ od punktu, w którym siê znajdujemy (rysunek poni¿ej). Chcemy dojechaæ do niej po odcinku prostej nachylonym pod k¹tem $\alpha$ do poziomu , a potem dalej poruszaæ siê wzd³u¿ asfaltowego odcinka drogi (prêdkoœæ poruszania siê poza drog¹ $30\ \text{km}/{h}$, wzd³ó¿ drogi $60\ \text{km}/\text{h}$). Wyznacz $\alpha$, dla którego ca³¹ drogê pokonamy w najkrótszym czasie.
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\draw[dashed] (0,0)--(2,0);
+		\draw (2,0)--(2,5);
+		\draw[blue,very thick] (0,0)--(2,1)--(2,5);
+		\draw (1,0) arc (0:27:1);
+		\draw (0.7,0.15) node {$\alpha$};
+		\draw (1,-0.25) node {$a$};
+		\draw (2.25,2.5) node {$b$};
+	\end{tikzpicture}
+\end{figure}
+
+
+\end{document}

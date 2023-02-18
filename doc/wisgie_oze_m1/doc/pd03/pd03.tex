@@ -1,0 +1,203 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm,
+right=1.5cm, nohead}
+\usepackage{amsmath,amssymb,amsfonts}
+\begin{document}
+\begin{center}
+\large{\textbf{PRACA DOMOWA III}}
+\end{center}
+
+\noindent
+imiê i nazwisko ........................................\\
+
+
+
+\noindent
+\textbf{Zadanie 1}\\ 
+\textbf{(a)} Wyznacz pole zawarte pomiêdzy liniami $y = 3x - x^2$ oraz $y = 2x$.\\ 
+\textbf{(b)} Wyznacz pole zawarte pomiêdzy liniami $y = x^2 - 4x + 5$ oraz $y = 5 - x^2$.\\ 
+\textbf{(c)} Wyznacz objêtoœæ obszaru powsta³ego przez obrót linii $y = 1-x^2$ wokó³ osi Ox, gdy $-1\leq x\leq 1 $.\\
+\textbf{(d)} Wyznacz objêtoœæ obszaru powsta³ego przez obrót linii $y = \frac{1}{x^2}$ wokó³ osi Ox, gdy $1\leq x\leq 2$.\\
+
+
+\noindent
+\textbf{odpowiedzi}:\\ 
+\textbf{(a)} $S = \frac 16$, \textbf{(b)} $S = \frac 83$, \textbf{(c)} $V = \frac{16}{15}\pi$,  \textbf{(d)} $V = \frac{7}{24}\pi$.\\
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,18cm);
+	\foreach \y in {0,...,36}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,27cm);
+	\foreach \y in {0,...,54}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\pagebreak
+
+\noindent
+\textbf{Zadanie 2} Rozwi¹¿ uk³ady równañ metod¹ Gaussa eliminacji:\\ 
+$$
+\textbf{(a)}\ 
+\left \{
+\begin{array}{l}
+	x + 2y - 2z = 2\\
+	3x + 2y + z = -3\\
+	2x - 2y + z = 7\\
+\end{array}
+\right .,\ 
+\textbf{(b)}\ 
+\left \{
+\begin{array}{l}
+	3x + y  = 1\\
+	-x + 2y + z = -2\\
+	2x + 3y + z = -1\\
+\end{array}
+\right .,\ 
+\textbf{(c)}\ 
+\left \{
+\begin{array}{l}
+	2x + y - z = 2\\
+	3x - 2y + z = 3\\
+	-x + 3y - 2z = 1\\
+\end{array}
+\right .,\  
+\textbf{(d)}\ 
+\left \{
+\begin{array}{l}
+	x + 2y + t = -3\\
+	y + z + 2t = -3\\
+	2x + z + t = 2\\
+	x + y + 2z = 4
+\end{array}
+\right . 
+$$
+
+
+\vspace{0.25cm}
+\noindent
+\textbf{odpowiedzi}: \\
+\textbf{(a)} $x = 2, y= -3, z = -3$, 
+\textbf{(b)} $y = 1 - 3x, z =  -4 + 7x, x\in\mathbb{R}$,  
+\textbf{(c)} uk³ad sprzeczny, \\
+\textbf{(d)} $x = 1, y = -1, z = 2, t = -2$.\\
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,19cm);
+	\foreach \y in {0,...,38}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,27cm);
+	\foreach \y in {0,...,54}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\pagebreak
+
+\noindent
+\textbf{Zadanie 3} Rozwi¹¿ uk³ady równañ lub wyznacz wskazan¹ niewiadom¹ stosuj¹c wzory Cramera:
+$$
+\textbf{(a)}\ 
+\left \{
+\begin{array}{l}
+	x + 2y - 2z = 2\\
+	3x + 2y + z = -3\\
+	2x - 2y + z = 7\\
+\end{array}
+\right .,\ 
+\textbf{(b)}\ 
+\left \{
+\begin{array}{l}
+	x + 2y + t = -3\\
+	y + z + 2t = -3\\
+	2x + z + t = 2\\
+	x + y + 2z = 4
+\end{array}
+\right .\ z =?,\ 
+\textbf{(c)}\ 
+\left \{
+\begin{array}{l}
+	x + y - z + t = 2\\
+	2x - y - 2z + t = -2\\
+	x + 2y - 2z + t = 3\\
+	2x - y + z + t = 1\\
+\end{array}
+\right .\ y =?,\ ,\ 
+$$
+$$
+\textbf{(d)}\ 
+ \left \{
+ \begin{array}{l}
+ 	2x + y + z + t = 1\\
+ 	x + 2y + z + t = 2\\
+ 	x + y + 2z + t = 5\\
+ 	x + y + z + 2t = 2
+ \end{array}
+ \right .\ z =?,\ 
+$$
+
+\vspace{0.25cm}
+\noindent
+\textbf{odpowiedzi}: 
+\textbf{(a)} $x = 2, y= -3, z = -3$, 
+\textbf{(b)} $z = 2$,  
+\textbf{(c)} $y = 2$, 
+\textbf{(d)} $z = 3$.\\ 
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,19cm);
+	\foreach \y in {0,...,38}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\foreach \x in {0,...,34}
+	\draw (0.5*\x,0)--(0.5*\x,27cm);
+	\foreach \y in {0,...,54}
+	\draw (0,0.5*\y)--(17cm,0.5*\y);
+	\end{tikzpicture}
+\end{figure}
+
+\end{document}

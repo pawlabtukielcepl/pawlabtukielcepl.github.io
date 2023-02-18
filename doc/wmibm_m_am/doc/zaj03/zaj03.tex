@@ -1,0 +1,61 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage{float} %dzieki temu pakietowi rysunki pojawiaja sie tam gdzie chce po uzyciu opcji H w srodowisku figure
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{import}
+\usepackage[tight]{subfigure}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+% ---- PAGE LAYOUT ----
+\geometry{a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm,
+right=1.5cm, nohead}
+
+\begin{document}
+
+\begin{center}
+\large{\textbf{ZESTAW ZADAÑ III}}
+\end{center}
+
+
+\noindent
+\textbf{Zadanie 1} Oblicz granice:\\ 
+\textbf{(a)} $\lim\limits_{x\rightarrow \frac 23} (x^2-5x+6)$, 
+\textbf{(b)} $\lim\limits_{x\rightarrow 3}\frac{x^2-9}{x-3}$, 
+\textbf{(c)} $\lim\limits_{x\rightarrow -2}\frac{x^3+8}{x+2}$,  
+\textbf{(d)} $\lim\limits_{x\rightarrow 1}\frac{x^2+3x-4}{x^2+2x-3}$, \\
+\textbf{(e)} $\lim\limits_{x\rightarrow 0}\left(\frac{1}{x}+\frac{2}{x^2-2x}\right)$, 
+\textbf{(f)} $\lim\limits_{x\rightarrow 1}\left(\frac{1}{x-1}+\frac{1}{x-x^2}\right)$, 
+\textbf{(g)} $\lim\limits_{x\rightarrow 0}\frac{\sqrt{x+1}-1}{\sqrt{x+4}-2}$, 
+\textbf{(h)} $\lim\limits_{x\rightarrow -8}\frac{\sqrt[3]{x}+2}{\sqrt{12+x}-2}$.\\
+
+\noindent
+\textbf{Zadanie 2} Oblicz granice jednostronne:\\
+\textbf{(a)} $\lim\limits_{x\rightarrow 3^{-}}\frac{x^2-9}{x^2-6x+9}$, $\lim\limits_{x\rightarrow 3^{+}}\frac{x^2-9}{x^2-6x+9}$,
+\textbf{(b)} $\lim\limits_{x\rightarrow 1^{-}} \frac{x^2+1}{x^2-3 x+2}$, $\lim\limits_{x\rightarrow 1^{+}} \frac{x^2+1}{x^2-3 x+2}$, $\lim\limits_{x\rightarrow 2^{-}} \frac{x^2+1}{x^2-3 x+2}$, $\lim\limits_{x\rightarrow 2^{+}} \frac{x^2+1}{x^2-3 x+2}$,\\
+\textbf{(c)} $\lim\limits_{x\rightarrow 1^{-}} e^{\frac{x}{x^2-1}}$, 
+$\lim\limits_{x\rightarrow 1^{+}} e^{\frac{x}{x^2-1}}$, $\lim\limits_{x\rightarrow -1^{-}} e^{\frac{x}{x^2-1}}$, $\lim\limits_{x\rightarrow -1^{+}} e^{\frac{x}{x^2-1}}$, 
+\textbf{(d)} $\lim\limits_{x\rightarrow -1^{-}} \ln\frac{x}{1-x^2}$, 
+$\lim\limits_{x\rightarrow 0^{+}} \ln\frac{x}{1-x^2}$, $\lim\limits_{x\rightarrow 1^{-}} \ln\frac{x}{1-x^2}$.\\
+
+
+
+\noindent
+\textbf{Zadanie 3} Oblicz granice:\\
+\textbf{(a)} $\lim\limits_{x\rightarrow -\infty}\frac{4x^3-3x+5}{3x^3-x^2+1}$, $\lim\limits_{x\rightarrow +\infty}\frac{4x^3-3x+5}{3x^3-x^2+1}$, 
+\textbf{(b)} $\lim\limits_{x\rightarrow -\infty}\frac{x^2-3x+1}{\sqrt{x^4+1} + x^2 - 1}$, $\lim\limits_{x\rightarrow +\infty} \frac{x^2-3x+1}{\sqrt{x^4+1} + x^2 - 1}$,\\
+\textbf{(c)} $\lim\limits_{x\rightarrow -\infty}\frac{x^3-2x+5}{x^2+3x-1}$, $\lim\limits_{x\rightarrow +\infty} \frac{x^3-2x+5}{x^2+3x-1}$, 
+\textbf{(d)} $\lim\limits_{x\rightarrow -\infty}\frac{3x^2+2x-1}{5x^4+3x^2-x + 7}$, $\lim\limits_{x\rightarrow +\infty} \frac{3x^2+2x-1}{5x^4+3x^2-x + 7}$,\\
+\textbf{(e)} $\lim\limits_{x\rightarrow -\infty}\left(\sqrt{x^2 + 4x + 7} + x\right)$, $\lim\limits_{x\rightarrow +\infty} \left(\sqrt{x^2 + 4x + 7} - x\right)$, 
+\textbf{(f)} $\lim\limits_{x\rightarrow -\infty} e^{\frac{1-x^2}{2x+3}}$, $\lim\limits_{x\rightarrow +\infty} e^{\frac{1-x^2}{2x+3}}$.\\
+
+
+
+\end{document}
